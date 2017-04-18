@@ -11,8 +11,6 @@
   "scripts": {
     "start": "node server/basic-server.js",
     "start:es6": "babel-node server/basic-server.js"
-    // "test:es6": "mocha --compilers js:babel-register server/spec"
-    // "lint": "eslint ./"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",
