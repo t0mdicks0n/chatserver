@@ -4,7 +4,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var app = express();
 
-var port = 3000;
+var port = process.env.PORT || 8080; 
 var ip = '127.0.0.1';
 var dbLocation = '../db/db.json';
 
@@ -17,7 +17,7 @@ var readDatabase = function () {
 };
 
 app.listen(port, ip, function() {
-  console.log("Server running on http://127.0.0.1:3000");
+  console.log("Server running!");
 });
 
 app.get('/classes/messages', function(request, response) {
